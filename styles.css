@@ -1,0 +1,55 @@
+@charset "UTF-8";
+:root {
+
+    --black: #14191B ;
+    --darkblue: #1A3036;
+    --lightblue: #618B90;
+    --gold: #B8824D ;
+    --dirtywhite: #C2C3B9;
+    --white: #ffff;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Josefin sans' sans-serif;
+}
+
+.btn {
+    background-color: var(--lightblue);
+    color: var(--darkblue);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    opacity: .85;
+    font-weight: bold;
+
+}
+
+.main-img {
+    background-image:url(gjoel_kro_menu.jpeg);
+
+    background-size: cover;
+    height: 40vw;
+    background-position-y: 45%;
+    width: 100%;
+    display: none;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .main-img {
+        display: block;
+    }
+}

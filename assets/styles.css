@@ -56,13 +56,14 @@ h1, h2, h3, h4, h5 {
 .home-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto;
     grid-template-areas: 
     "nav"
     "lunch"
     "dinner"
     "event"
-    "footer";
+    "footer"
+    ;
 }
 
 /* lunch */
@@ -118,6 +119,36 @@ h1, h2, h3, h4, h5 {
 .dinner, .events, .lunch {
     padding: 14vw 9vw 0 9vw;
     color: var(--white);
+}
+
+footer {
+    gap: 1rem;
+    background-color: #000000;
+    color: var(--dirtywhite);
+    padding: 9vw;
+}
+
+footer h5 {
+    color: var(--lightblue);
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+
+footer section p {
+    line-height: 2;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.fas, .fab {
+    color: var(--lightblue);
+    font-size: 1.3rem;
 }
 
 @media screen and (min-width: 1200px) {

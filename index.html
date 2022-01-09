@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles.css">
+    <script src="https://kit.fontawesome.com/81264b6916.js" crossorigin="anonymous"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
@@ -85,7 +86,7 @@
         </section>
     </main>
     <!-- footer -->
-    <footer>
+    <footer class="flex-column">
         <section>
             <h5>Opening hours</h5>
             <p>Wednesday-Sunday: 12:00-22:00</p>
@@ -94,15 +95,31 @@
 
         <section>
             <h5>Social media</h5>
-            <p>Instagram</p>
-            <p>Facebook</p>
+
+            <div class="icon">
+                <i class="fab fa-instagram"></i>
+                <p>Instagram</p>
+            </div>
+
+            <div class="icon">
+                <i class="fab fa-facebook"></i>
+                <p>Facebook</p>
+            </div>
+
         </section>
 
         <section>
             <h5>Contact</h5>
             <address>
-                <p>+45 22367687</p>
-                <p>Fjordgade 18. 9440</p>
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                    <p>+45 22367687</p>
+                </div>
+
+                <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Fjordgade 18. 9440</p>
+                </div>
             </address>
         </section>
     </footer>

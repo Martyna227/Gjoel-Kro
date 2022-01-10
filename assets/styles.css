@@ -71,17 +71,27 @@ h1, h2, h3, h4, h5 {
 
 /* Mobile navigation */
 
-header {
+header div {
     display: flex;
     justify-content: space-between;
 }
 
-figure {
-    z-index: 102;
+header div:first-child {
+   left: 0;
 }
 
-figure img {
-    max-width: 30vw;
+figure {
+    /* z-index: 102; */
+}
+
+/* header a img {
+    max-width: 45vw;
+    max-height: auto;
+} */
+
+header div img {
+    max-width: 45vw;
+    max-height: auto;
 }
 
 #mobile {

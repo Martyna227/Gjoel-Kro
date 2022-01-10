@@ -88,22 +88,32 @@ header .mobile-nav ul li {
     text-align: center;
 }
 
+.desktop-nav, .main-img {
+    display: none;
+}
 
+/* Mobile JavaScript*/
 
-/* Mobile first-Menu for JAVA */
-
-/* header.opened .mobile-nav {
+header.opened .mobile-nav {
     transform: translateX(0);
 }
 
+/* .align-center {
 
+    display: flex;
+    
+    justify-content: center;
+    
+    align-items: center;
+    
+    } */
 
-header.opened #menu {
+header.opened #mobile {
     background-color: var(--black);
-} */
+}
+
 
 /* lunch */
-
 .lunch {
     background-image: url(pictures/dish.jpeg);
     background-size: cover;

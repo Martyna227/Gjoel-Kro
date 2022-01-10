@@ -46,15 +46,7 @@ h1, h2, h3, h4, h5 {
 
 /* mobile */
 
-/* .main-img {
-    background-image:url(gjoel_kro_menu.jpeg);
 
-    background-size: cover;
-    height: 40vw;
-    background-position-y: 45%;
-    width: 100%;
-    display: none;
-} */
 
 .home-container {
     display: grid;
@@ -76,19 +68,6 @@ h1, h2, h3, h4, h5 {
     display: flex;
     justify-content: space-between;  
 }
-
-figure {
-    /* z-index: 102; */
-}
-
-.try {
-    line-height: 0;
-}
-
-/* header a img {
-    max-width: 45vw;
-    max-height: auto;
-} */
 
 header div img {
     max-width: 50vw;
@@ -152,8 +131,19 @@ header.opened #mobile {
     background-color: var(--black);
 }
 
+/* font sizes for mobile */
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1rem;
+}
 
 /* lunch */
+
+
+
 .lunch {
     background-image: url(pictures/dish-mobile.jpg);
     background-size: cover;
@@ -172,7 +162,6 @@ header.opened #mobile {
 }
 
 .home-text h2 {
-    font-size: 3rem;
     color: var(--dirtywhite);
     font-weight: lighter;
     /* font-size: 15vw; */
@@ -250,17 +239,18 @@ footer section p {
 }
 
 @media screen and (min-width: 1200px) {
-    .main-img, .img-lunch, .img-dinner, .desktop-nav {
+    .main-img, .img-lunch, .img-dinner, .desktop-nav, .lunch p:nth-child(4), .lunch p:nth-child(6), .dinner p:nth-child(4), .dinner p:nth-child(6), .events p:nth-child(3), .lunch h4, .dinner h4 {
         display: block;
     }
 
-    .mobile-nav, .fa-bars {
+    .mobile-nav, #mobile {
         display: none;
     }
 
     .grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas:
         "hero hero"
         "lunch img1"
@@ -268,27 +258,41 @@ footer section p {
         "events events"
         ;
     }
-
     .main-img {
+        background-image: url(pictures/heroimg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;        
         grid-area: hero;
     }
+
+    footer {
+        flex-direction: row;
+    }
+    
+    .home-text {
+        justify-self: center;
+        align-self: center;
+    }
+    
     .events {
         grid-area: events;
-        max-height: auto;
         background-image: none;
+        height: fit-content;
     }
     .img-lunch {
         grid-area: img1;
         background-image: url(pictures/dish2.jpeg);
         background-size: cover;
         width: 100%;
-        max-height: auto
+        max-height: auto;
     }
 
     .lunch {
         grid-area: lunch;
         width: 100%;
         height: auto;
+        background-image: none;
+        background-color: var(--darkblue)
     }
 
     .img-dinner {
@@ -296,14 +300,16 @@ footer section p {
         background-image: url(pictures/dish2.jpeg);
         background-size: cover;
         width: 100%;
-        max-height: auto
+        max-height: auto;
     }
     .dinner {
         grid-area: dinner;
+        background-image: none;
         width: 100%;
         height: auto;
     }
-    h2 {
-        font-size: 1rem;
+
+    .dinner, .events, .lunch {
+        padding: 10vw 9vw 10vw 9vw;
     }
 }

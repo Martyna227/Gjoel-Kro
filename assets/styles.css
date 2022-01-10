@@ -175,7 +175,7 @@ header.opened #mobile {
     font-size: 3rem;
     color: var(--dirtywhite);
     font-weight: lighter;
-    font-size: 15vw;
+    /* font-size: 15vw; */
 }
 
 .events {
@@ -250,7 +250,60 @@ footer section p {
 }
 
 @media screen and (min-width: 1200px) {
-    .main-img {
+    .main-img, .img-lunch, .img-dinner, .desktop-nav {
         display: block;
+    }
+
+    .mobile-nav, .fa-bars {
+        display: none;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "hero hero"
+        "lunch img1"
+        "img dinner"
+        "events events"
+        ;
+    }
+
+    .main-img {
+        grid-area: hero;
+    }
+    .events {
+        grid-area: events;
+        max-height: auto;
+        background-image: none;
+    }
+    .img-lunch {
+        grid-area: img1;
+        background-image: url(pictures/dish2.jpeg);
+        background-size: cover;
+        width: 100%;
+        max-height: auto
+    }
+
+    .lunch {
+        grid-area: lunch;
+        width: 100%;
+        height: auto;
+    }
+
+    .img-dinner {
+        grid-area: img;
+        background-image: url(pictures/dish2.jpeg);
+        background-size: cover;
+        width: 100%;
+        max-height: auto
+    }
+    .dinner {
+        grid-area: dinner;
+        width: 100%;
+        height: auto;
+    }
+    h2 {
+        font-size: 1rem;
     }
 }

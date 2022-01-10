@@ -25,7 +25,7 @@ a {
 
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Josefin sans'sans-serif;
+    font-family: 'Josefin sans', sans-serif;
 }
 
 .flex-column {
@@ -41,6 +41,7 @@ h1, h2, h3, h4, h5 {
     opacity: .85;
     font-weight: 800;
     text-align: center;
+    text-transform: uppercase;
 }
 
 /* mobile */
@@ -111,7 +112,7 @@ header .mobile-nav {
     transform: translateX(-100vw);
     z-index: 100;
     transition: transform .25s ease-in-out;
-    opacity: .91;
+    /* opacity: 1; */
 }
 
 .fa-bars, .fa-times {

@@ -80,6 +80,10 @@ figure {
     /* z-index: 102; */
 }
 
+.try {
+    line-height: 0;
+}
+
 /* header a img {
     max-width: 45vw;
     max-height: auto;
@@ -92,6 +96,7 @@ header div img {
 
 #mobile {
     z-index: 101;
+    justify-self: start;
 }
 
 header .mobile-nav {

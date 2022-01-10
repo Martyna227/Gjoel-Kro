@@ -94,7 +94,7 @@ header .mobile-nav {
     justify-content: left;
     align-items: center;
     padding-left: 15vw;
-    transform: translateX(100vw);
+    transform: translateX(-100vw);
     z-index: 100;
     transition: transform .25s ease-in-out;
     opacity: .91;

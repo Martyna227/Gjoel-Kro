@@ -20,6 +20,7 @@
 
 a {
     text-decoration: none;
+    display: inline-block;
 }
 
 
@@ -65,31 +66,59 @@ h1, h2, h3, h4, h5 {
         "event"
         "footer"
     ;
+    background-color: var(--black);
 }
 
 /* Mobile navigation */
 
-header .mobile-nav {
+header {
+    display: flex;
+    justify-content: space-between;
+}
 
+figure img {
+    max-width: 30vw;
+    z-index: 102;
+}
+
+#mobile {
+    z-index: 101;
+}
+
+header .mobile-nav {
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 75vh;
     background-color: var(--black);
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    padding-left: 15vw;
     transform: translateX(100vw);
+    z-index: 100;
     transition: transform .25s ease-in-out;
+    opacity: .91;
+}
+
+.fa-bars, .fa-times {
+    color: var(--gold);
+    font-size: 10vw;
+    margin: 1rem;
 }
 
 header .mobile-nav ul li {
-    margin: 2rem 0;
+    /* margin: 2.5rem 0; */
     font-size: 1.6rem;
-    text-align: center;
+    text-align: left;
+    text-decoration: none;
+    color: var(--white);
+    list-style: none;
 }
 
-.desktop-nav, .main-img {
-    display: none;
+header .mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 /* Mobile JavaScript*/
@@ -98,15 +127,11 @@ header.opened .mobile-nav {
     transform: translateX(0);
 }
 
-/* .align-center {
-
+.align-center {
     display: flex;
-    
     justify-content: center;
-    
     align-items: center;
-    
-    } */
+}
 
 header.opened #mobile {
     background-color: var(--black);
@@ -115,7 +140,7 @@ header.opened #mobile {
 
 /* lunch */
 .lunch {
-    background-image: url(pictures/dish.jpeg);
+    background-image: url(pictures/dish-mobile.jpg);
     background-size: cover;
     width: 100%;
     height: 100vw;
@@ -124,7 +149,7 @@ header.opened #mobile {
 
 
 .dinner {
-    background-image: url(pictures/dish2.jpeg);
+    background-image: url(pictures/dish2-mobile.jpg);
     background-size: cover;
     width: 100%;
     height: 100vw;
@@ -138,27 +163,12 @@ header.opened #mobile {
     font-size: 15vw;
 }
 
-.home-text h4 {
-    display: none;
-}
-
-.home-text p:nth-child(4), p:nth-child(6) {
-    display: none;
-}
-
-.events p:nth-child(3) {
-    display: none;
-}
-
 .events {
-    background-image: url(pictures/1.PNG);
+    background-image: url(pictures/eventsteaser-mobile.jpg);
+    background-size: cover;
     width: 100%;
     height: 100vw;
     grid-area: event;
-}
-
-.img-dinner, .img-lunch {
-    display: none;
 }
 
 .dinner div, .lunch div, .events div {
@@ -169,6 +179,8 @@ header.opened #mobile {
     padding: 14vw 9vw 0 9vw;
     color: var(--white);
 }
+
+/* Mobile footer */
 
 footer {
     gap: 1rem;
@@ -195,9 +207,31 @@ footer section p {
     align-items: center;
 }
 
-.fas, .fab {
+.fa-instagram, .fa-facebook, .fa-phone, .fa-map-marker-alt {
     color: var(--lightblue);
     font-size: 1.3rem;
+}
+
+/* MOBILE display: none; */
+
+.desktop-nav, .main-img {
+    display: none;
+}
+
+.home-text h4 {
+    display: none;
+}
+
+.home-text p:nth-child(4), p:nth-child(6) {
+    display: none;
+}
+
+.events p:nth-child(3) {
+    display: none;
+}
+
+.img-dinner, .img-lunch {
+    display: none;
 }
 
 @media screen and (min-width: 1200px) {

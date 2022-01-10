@@ -76,9 +76,12 @@ header {
     justify-content: space-between;
 }
 
+figure {
+    z-index: 102;
+}
+
 figure img {
     max-width: 30vw;
-    z-index: 102;
 }
 
 #mobile {

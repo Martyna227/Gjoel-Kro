@@ -1,13 +1,14 @@
 @charset "UTF-8";
+
 :root {
 
-    --black: #14191B ;
+    --black: #14191B;
     --darkblue: #1A3036;
     --lightblue: #618B90;
-    --gold: #B8824D ;
+    --gold: #B8824D;
     --dirtywhite: #C2C3B9;
     --white: #ffff;
-    }
+}
 
 * {
     margin: 0;
@@ -23,7 +24,7 @@ a {
 
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Josefin sans' sans-serif;
+    font-family: 'Josefin sans'sans-serif;
 }
 
 .flex-column {
@@ -57,18 +58,54 @@ h1, h2, h3, h4, h5 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: 
-    "nav"
-    "lunch"
-    "dinner"
-    "event"
-    "footer"
+    grid-template-areas:
+        "nav"
+        "lunch"
+        "dinner"
+        "event"
+        "footer"
     ;
 }
 
+/* Mobile navigation */
+
+header .mobile-nav {
+
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100vw);
+    transition: transform .25s ease-in-out;
+}
+
+header .mobile-nav ul li {
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+
+
+/* Mobile first-Menu for JAVA */
+
+/* header.opened .mobile-nav {
+    transform: translateX(0);
+}
+
+
+
+header.opened #menu {
+    background-color: var(--black);
+} */
+
 /* lunch */
+
 .lunch {
-    background-image:url(pictures/dish.jpeg);
+    background-image: url(pictures/dish.jpeg);
     background-size: cover;
     width: 100%;
     height: 100vw;
@@ -77,30 +114,32 @@ h1, h2, h3, h4, h5 {
 
 
 .dinner {
-    background-image: url(pictures/dish2.jpeg); background-size: cover;
+    background-image: url(pictures/dish2.jpeg);
+    background-size: cover;
     width: 100%;
     height: 100vw;
     grid-area: dinner;
 }
 
-.home-text h2{
+.home-text h2 {
     font-size: 3rem;
     color: var(--dirtywhite);
     font-weight: lighter;
     font-size: 15vw;
 }
 
-.home-text h4{
+.home-text h4 {
     display: none;
 }
 
-.home-text p:nth-child(4), p:nth-child(6)  {
+.home-text p:nth-child(4), p:nth-child(6) {
     display: none;
 }
 
-.events p:nth-child(3){
+.events p:nth-child(3) {
     display: none;
 }
+
 .events {
     background-image: url(pictures/1.PNG);
     width: 100%;
@@ -112,7 +151,7 @@ h1, h2, h3, h4, h5 {
     display: none;
 }
 
-.dinner div, .lunch div, .events div{
+.dinner div, .lunch div, .events div {
     gap: 2rem;
 }
 

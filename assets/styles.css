@@ -50,8 +50,6 @@ h1, h2, h3, h4, h5 {
 
 /* mobile */
 
-
-
 .home-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -333,6 +331,8 @@ footer address {
     .dinner div, .lunch div, .events div {
         gap: 1rem;
     }
+
+    /* Font editing for desktop */
 
     .home-text h2 {
         font-size: 6vw;

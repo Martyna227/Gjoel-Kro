@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5 {
     padding: 0.5rem 0.8rem;
     border-radius: 0.5rem;
     opacity: .85;
-    font-weight: 800;
+    font-weight: 700;
     text-align: center;
     text-transform: uppercase;
 }
@@ -252,22 +252,38 @@ footer address {
 
 
 
-/* EVENTS PAGE */
+/* mobile EVENTS page */
 .event {
     background-color: var(--dirtywhite);
-    padding: 4rem 2rem;
-    
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .event p {
-    color: rgba(0, 0, 0, 0.705);
+    line-height: 2rem;
+    color: rgba(0, 0, 0, 0.800);
 }
 
 .event h1 {
-    font-size: 10vw;
-    border-bottom: 1px solid black;
+    font-size: 12vw;
+    color:rgba(0, 0, 0, 0.800);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.800);
     width: fit-content;
+    align-self: center;
 }
+
+.event-gallery img:first-child, .event-gallery img:nth-child(2) {
+    display: none;
+}
+
+.event img {
+    max-width: 18rem;
+    opacity: .9;
+}
+
+
 
 @media screen and (min-width: 1200px) {
     .main-img, .img-lunch, .img-dinner, .desktop-nav, .lunch p:nth-child(4), .lunch p:nth-child(6), .dinner p:nth-child(4), .dinner p:nth-child(6), .events p:nth-child(3), .lunch h4, .dinner h4 {
@@ -494,7 +510,7 @@ footer address {
         justify-content: center;
     }
     footer p {
-        font-size: 1.5vw;
+        font-size: 1.3vw;
         font-weight: lighter;
     }
 
@@ -504,6 +520,35 @@ footer address {
     }
 
     .fa-instagram, .fa-facebook, .fa-phone, .fa-map-marker-alt {
-        font-size: 2vw;
+        font-size: 1.8vw;
+    }
+
+
+    /* event page */
+
+    .event-gallery {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        justify-content: center;
+    }
+
+    .event-gallery img:first-child, .event-gallery img:nth-child(2) {
+        display: block;
+    }
+
+    .event img {
+        max-width: 24rem;
+    }
+    .event h1 {
+        font-size: 6vw;
+        text-align: center;
+        font-weight: lighter;
+    }
+
+    .event p {
+        padding: 0 30rem;
+        font-size: 1.3rem;
+        font-weight: 300
     }
 }

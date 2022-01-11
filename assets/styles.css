@@ -304,6 +304,47 @@ footer address {
     align-self: center;
 }
 
+
+/* restaurant mobile */
+
+.restaurant {
+    background-color: var(--dirtywhite);
+    padding: 3rem 2rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.restaurant-container {
+    display: grid;
+    gap: 3rem;
+}
+
+.restaurant h1 {
+    margin-bottom: 2rem;
+}
+
+.restaurant article {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.restaurant h2 {
+    font-size: 8vw;
+    color:rgba(0, 0, 0, 0.800);
+}
+
+.restaurant img {
+    max-width: 18rem;
+    opacity: .9;
+}
+
+.restaurant p {
+    line-height: 2rem;
+    color:rgba(0, 0, 0, 0.800);
+}
+
 @media screen and (min-width: 1200px) {
     .main-img, .img-lunch, .img-dinner, .desktop-nav, .lunch p:nth-child(4), .lunch p:nth-child(6), .dinner p:nth-child(4), .dinner p:nth-child(6), .events p:nth-child(3), .lunch h4, .dinner h4 {
         display: block;
@@ -561,7 +602,6 @@ footer address {
     }
     .h1 {
         font-size: 5vw;
-        text-align: center;
         font-weight: lighter;
     }
 
@@ -570,4 +610,23 @@ footer address {
         font-size: 1.3rem;
         font-weight: 300
     }
+
+    /* restaurant desktop */
+    .restaurant-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .restaurant h2 {
+        font-size: 2vw;
+        text-align: center
+    }
+    
+
+    .restaurant img {
+        align-self: center;
+    }
+
+
 }

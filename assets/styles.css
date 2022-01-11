@@ -695,17 +695,22 @@ footer address {
             display: block;
         }
 
-        .sorrounding-mobile {
+        .sorrounding {
            display: grid;
            grid-template-areas: 
            'h1'
            '2'
            '3'
             ;
+            row-gap: 8rem;
         }
 
         .sorrounding h1 {
             grid-area: h1;
+            color: var(--gold);
+            border-bottom: 1px solid var(--gold);
+            align-self: center;
+            justify-self: center;
         }
 
         .dekstop-sorrounding {
@@ -715,19 +720,22 @@ footer address {
             'img article'
             ;
             grid-template-columns: 1fr 1fr;
+            justify-content: space-evenly;
         }
 
         .dekstop-sorrounding article:first-child {
             grid-area: img;
             background-image: url(pictures/opacity-farm.jpg);
             background-size: cover;
-            width: 30vw;
+            width: 40vw;
             height: 30vw;
+            
         }
 
         .dekstop-sorrounding article:nth-child(2) {
             grid-area: article;
             background-color: var(--black);
+            
         }
 
         .sorrounding-mobile {

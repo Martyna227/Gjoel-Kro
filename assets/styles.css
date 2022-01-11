@@ -258,8 +258,8 @@ footer address {
 
 /* LUNCH PAGE */
 
-.lunch-header {
-    background-color: black;
+.lunch-container {
+    background-color: var(--darkblue);
 }
 
 .home-btn {
@@ -272,6 +272,33 @@ footer address {
     color: var(--gold);
 }
 
+.h1-golden {
+    font-size: 12vw;
+    color: var(--gold);
+    border-bottom: 1px solid var(--gold);
+    width: fit-content;
+    align-self: center;
+}
+
+.lunch-container h2 {
+    font-size: 6vw;
+}
+
+.lunch-container h4 {
+    font-size: 4vw;
+}
+
+.lunch-img-mob img{
+    max-width: 100vw;
+}
+
+.lunch-img-desk {
+    display: none;
+}
+
+.lunch-suggestion {
+    display: none;
+}
 
 /* mobile EVENTS page */
 .event {

@@ -19,26 +19,37 @@
 <body class="home-container">
     <header>
         <div class="position">
-            <a href="" class="try"><img class="logo" src="assets/pictures/gjoelkro1.jpg" alt="gjoel kro"></a>
+            <a href=""><img class="logo" src="assets/pictures/gjoelkro1.jpg" alt="gjoel kro"></a>
 
             <a href="" id="mobile"><i class="fas fa-bars"></i></a>
         </div>
         <nav class="mobile-nav">
             <ul>
-                <li>Lunch</li>
-                <li>Dinner</li>
-                <li>The restaurant</li>
-                <li>Surroundings</li>
-                <li>Contact</li>
+                <li><a href="">Lunch</a></li>
+                <li><a href="">Dinner</a></li>
+                <li><a href="">The restaurant</a></li>
+                <li><a href="">Surroundings</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
 
         <nav class="desktop-nav">
             <ul>
-                <li>About the place</li>
-                <li>Menu</li>
-                <li>Events</li>
-                <li>Contact</li>
+                <li><a href="">About the place</a>
+                    <ul class="dropdown">
+                        <li><a href="">The restaurant</a></li>
+                        <li><a href="">Surroundings</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Menu</a>
+                    <ul class="dropdown">
+                        <li><a href="">Lunch</a></li>
+                        <li><a href="">Dinner</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">Events</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -100,7 +111,7 @@
         </section>
     </main>
     <!-- footer -->
-    <footer class="flex-column">
+    <footer>
         <section>
             <h5>Opening hours</h5>
             <p>Wednesday-Sunday: 12:00-22:00</p>

@@ -690,5 +690,76 @@ footer address {
             max-width: 24vw;
         }
 
-    
+        /* Sorroundings desktop */
+        .dekstop-sorrounding, .sorrounding-article h3 {
+            display: block;
+        }
+
+        .sorrounding-mobile {
+           display: grid;
+           grid-template-areas: 
+           'h1'
+           '2'
+           '3'
+            ;
+        }
+
+        .sorrounding h1 {
+            grid-area: h1;
+        }
+
+        .dekstop-sorrounding {
+            grid-area: 2;
+            display: grid;
+            grid-template-areas: 
+            'img article'
+            ;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .dekstop-sorrounding article:first-child {
+            grid-area: img;
+            background-image: url(pictures/opacity-farm.jpg);
+            background-size: cover;
+            width: 30vw;
+            height: 30vw;
+        }
+
+        .dekstop-sorrounding article:nth-child(2) {
+            grid-area: article;
+            background-color: var(--black);
+        }
+
+        .sorrounding-mobile {
+            grid-area: 3;
+            display: grid;
+            grid-template-areas: 
+            'hiking harbour local'
+            ;
+        }
+
+        .hiking {
+            grid-area: hiking;
+        }
+
+        .harbour {
+            grid-area: harbour;
+        }
+
+        .local {
+            grid-area: local;
+        }
+
+
+         .sorrounding-article{
+            width: 30vw;
+            height: 40vw;
+            background-image: cover;
+            padding: 0;
+        }
+
+        .sorrounding-mobile p, .dekstop-sorrounding p {
+            padding: 0;
+        }
+
     }

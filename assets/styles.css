@@ -727,15 +727,37 @@ footer address {
             grid-area: img;
             background-image: url(pictures/opacity-farm.jpg);
             background-size: cover;
-            width: 40vw;
-            height: 30vw;
-            
+            width: 37vw;
+            height: 37vw;
+            position: relative;
+        }
+
+
+
+        .dekstop-sorrounding > article:first-child h2 {
+            position: absolute;
+            bottom: 6rem;
+            left: 2rem;
+            color: white;
+            padding: 3rem;
         }
 
         .dekstop-sorrounding article:nth-child(2) {
             grid-area: article;
             background-color: var(--black);
+            padding: 5rem 8rem;
             
+        }
+
+        .dekstop-sorrounding > article:nth-child(2) h2 {
+            color: var(--dirtywhite);
+            font-size: 3rem;
+        }
+
+        .dekstop-sorrounding h3 {
+            color: var(--gold);
+            margin-bottom: 5rem;
+            font-size: 1rem;
         }
 
         .sorrounding-mobile {
@@ -747,7 +769,7 @@ footer address {
         }
 
         .hiking {
-            grid-area: hiking;
+            grid-area: hiking; 
         }
 
         .harbour {
@@ -758,16 +780,50 @@ footer address {
             grid-area: local;
         }
 
-
-         .sorrounding-article{
+         .sorrounding-article {
             width: 30vw;
             height: 40vw;
             background-image: cover;
-            padding: 0;
+            padding: 5rem 5rem;
+            margin-bottom: 10rem;    
         }
 
         .sorrounding-mobile p, .dekstop-sorrounding p {
             padding: 0;
+            padding-bottom: 3rem;
+            color: var(--dirtywhite);
+            line-height: 2;
         }
 
+        .sorrounding-mobile h2 {
+            color: white;
+            font-size: 2rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            text-align: center;
+            padding: 50% 0;
+
+        }
+
+        .hover-text {
+            display: none;
+        }
+
+        .btn {
+            display: none;
+        }
+
+        .sorrounding-article:hover > .hover-text {
+            display: block;
+        }
+
+        .sorrounding-article:hover > .btn {
+            display: block;
+        }
+
+        .sorrounding-article:hover h2 {
+            text-align: none;
+            padding: 0;
+            transition: .3s;
+        }
     }

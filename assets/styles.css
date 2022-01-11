@@ -475,16 +475,16 @@ footer address {
         justify-content: center;
     }
     footer p {
-        font-size: 2vw;
+        font-size: 1.5vw;
         font-weight: lighter;
     }
 
     footer h5 {
-        font-size: 3vw;
+        font-size: 2.5vw;
         font-weight: lighter;
     }
 
     .fa-instagram, .fa-facebook, .fa-phone, .fa-map-marker-alt {
-        font-size: 2rem;
+        font-size: 2vw;
     }
 }

@@ -422,6 +422,7 @@ footer address {
         position: relative;
         display: block;
         color: var(--dirtywhite);
+        border-bottom: 1px solid transparent;
     }
     .desktop-nav {
         align-self: center;
@@ -431,6 +432,10 @@ footer address {
     header .desktop-nav > ul li:hover>.dropdown {
         display: block;
         list-style: none;
+    }
+
+    header .dropdown li a:hover {
+        border-bottom: 1px solid transparent;
     }
 
     header .desktop-nav a {

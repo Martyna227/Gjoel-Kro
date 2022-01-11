@@ -302,6 +302,53 @@ footer address {
 }
 
 
+/* Sorroundings for mobile */
+
+.dekstop-sorrounding, .sorrounding-article h3, .logo  {
+    display: none;
+}
+.sorrounding {
+    background-color: var(--darkblue);
+}
+
+.sorrounding-article {
+    padding: 14vw 9vw 0 9vw;
+}
+
+.sorrounding-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.sorrounding-article p {
+    color: white;
+    padding-bottom: 3rem;
+
+}
+
+.hiking {
+    background-image: url(pictures/opacity-hiking.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vw;
+}
+
+.harbour {
+    background-image: url(pictures/opacity-boat.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vw;
+}
+
+.local {
+    background-image: url(pictures/opacity-farm.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vw;
+}
+
+
 
 @media screen and (min-width: 1200px) {
     .main-img, .img-lunch, .img-dinner, .desktop-nav, .lunch p:nth-child(4), .lunch p:nth-child(6), .dinner p:nth-child(4), .dinner p:nth-child(6), .events p:nth-child(3), .lunch h4, .dinner h4 {

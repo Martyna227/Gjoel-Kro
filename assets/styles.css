@@ -429,18 +429,17 @@ footer address {
         padding-right: 5rem;
     }
 
-    header .desktop-nav > ul li:hover>.dropdown {
+    header .desktop-nav > ul li:hover > .dropdown {
         display: block;
         list-style: none;
     }
 
-    header .dropdown li a:hover {
+    header .dropdown li a {
         border-bottom: 1px solid transparent;
     }
 
     header .desktop-nav a {
         text-decoration: none;
-        
         font-family: 'Josefin sans', sans-serif;
     }
     header .dropdown {

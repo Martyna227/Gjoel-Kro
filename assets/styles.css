@@ -284,13 +284,7 @@ footer address {
     color: rgba(0, 0, 0, 0.800);
 }
 
-.event h1 {
-    font-size: 12vw;
-    color:rgba(0, 0, 0, 0.800);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.800);
-    width: fit-content;
-    align-self: center;
-}
+
 
 .event-gallery img:first-child, .event-gallery img:nth-child(2) {
     display: none;
@@ -302,6 +296,13 @@ footer address {
 }
 
 
+.h1 {
+    font-size: 12vw;
+    color:rgba(0, 0, 0, 0.800);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.800);
+    width: fit-content;
+    align-self: center;
+}
 
 @media screen and (min-width: 1200px) {
     .main-img, .img-lunch, .img-dinner, .desktop-nav, .lunch p:nth-child(4), .lunch p:nth-child(6), .dinner p:nth-child(4), .dinner p:nth-child(6), .events p:nth-child(3), .lunch h4, .dinner h4 {
@@ -558,8 +559,8 @@ footer address {
     .event img {
         max-width: 24rem;
     }
-    .event h1 {
-        font-size: 6vw;
+    .h1 {
+        font-size: 5vw;
         text-align: center;
         font-weight: lighter;
     }

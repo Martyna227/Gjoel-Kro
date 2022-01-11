@@ -350,7 +350,7 @@ footer address {
 
 /* Sorroundings for mobile */
 
-.dekstop-sorrounding, .sorrounding-article h3, .logo {
+.dekstop-sorrounding, .sorrounding-article h3 {
     display: none;
 }
 
@@ -676,8 +676,19 @@ footer address {
             text-align: center
         }
 
-
         .restaurant img {
             align-self: center;
         }
+
+        .restaurant article {
+            align-self: start;
+            justify-self: start;
+            max-width: 24vw;
+        }
+
+        .restaurant img {
+            max-width: 24vw;
+        }
+
+    
     }
